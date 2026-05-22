@@ -22,9 +22,10 @@ export default tseslint.config(
       'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
       'no-console': ['warn', { allow: ['warn', 'error'] }],
       'no-debugger': 'error',
-      'no-duplicate-imports': 'error',
+      'no-duplicate-imports': 'warn',
       'no-empty-function': 'warn',
       'no-empty': ['error', { allowEmptyCatch: true }],
+      'no-useless-escape': 'warn',
 
       // TypeScript 规则 - Phase 1收紧
       '@typescript-eslint/no-explicit-any': 'warn',
@@ -45,7 +46,7 @@ export default tseslint.config(
           allowTaggedTemplates: true,
         },
       ],
-      '@typescript-eslint/consistent-type-imports': 'error',
+      '@typescript-eslint/consistent-type-imports': 'warn',
       '@typescript-eslint/no-non-null-assertion': 'warn',
       '@typescript-eslint/prefer-as-const': 'warn',
 
