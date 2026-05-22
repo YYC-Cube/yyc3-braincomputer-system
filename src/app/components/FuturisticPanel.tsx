@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import type { ReactNode } from 'react';
 import { motion } from 'motion/react';
 import { Card } from './ui/card';
 

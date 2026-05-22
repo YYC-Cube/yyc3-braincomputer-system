@@ -19,7 +19,7 @@ export default tseslint.config(
       // Phase 1 (当前): 基础收紧 - 已启用
       'prefer-const': 'error',
       'no-var': 'error',
-      'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
+      'no-unused-vars': ['warn', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
       'no-console': ['warn', { allow: ['warn', 'error'] }],
       'no-debugger': 'error',
       'no-duplicate-imports': 'warn',
@@ -34,6 +34,7 @@ export default tseslint.config(
         {
           argsIgnorePattern: '^_',
           varsIgnorePattern: '^_',
+          destructuredArrayIgnorePattern: '^_',
         },
       ],
       '@typescript-eslint/no-empty-object-type': 'warn',

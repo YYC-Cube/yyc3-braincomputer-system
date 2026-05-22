@@ -7,7 +7,8 @@
  * 支持: 中英双语、实时预览、WCAG 对比度检测
  */
 
-import React, { createContext, useContext, useState, useEffect, useCallback, ReactNode } from 'react';
+import type { ReactNode } from 'react';
+import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 
 // ===== 主题类型定义 =====
 export interface ThemeColors {

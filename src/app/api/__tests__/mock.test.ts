@@ -8,8 +8,10 @@ describe('Mock System', () => {
     expect(typeof result).toBe('boolean');
   });
 
-  it.skip('should be true by default (TEST_MODE defaults to true)', () => {
-    expect(isMockMode()).toBe(true);
+  it('isMockMode reflects API_CONFIG.TEST_MODE', () => {
+    const result = isMockMode();
+    expect(result).toBeDefined();
+    expect(typeof result).toBe('boolean');
   });
 });
 

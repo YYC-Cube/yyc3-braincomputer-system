@@ -14,7 +14,8 @@
  * notes: 需要在 App 根组件包裹 LanguageProvider
  */
 
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import type { ReactNode } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 
 type Language = 'zh' | 'en';
 

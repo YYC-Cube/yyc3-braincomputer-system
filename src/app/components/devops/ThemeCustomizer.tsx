@@ -15,8 +15,9 @@ import {
 } from 'lucide-react';
 import { FuturisticPanel } from '../FuturisticPanel';
 import { useLanguage } from '../LanguageContext';
+import type { ThemeConfig, ThemeColors, ThemeColorsForeground} from '../ThemeContext';
 import {
-  useTheme, PRESET_THEMES, ThemeConfig, ThemeColors, ThemeColorsForeground,
+  useTheme, PRESET_THEMES,
   getContrastRatio, getWCAGLevel, parseOklch,
 } from '../ThemeContext';
 import { toast } from 'sonner';
