@@ -1,15 +1,4 @@
----
-file: README.md
-description: YYC³ Brain Computer System — 本地闭环DevOps智能管理平台
-author: YanYuCloudCube Team
-version: v3.1.0
-created: 2026-05-19
-updated: 2026-05-19
-status: active
-tags: [project],[readme],[BCS],[devops]
-category: general
-language: zh-CN
----
+# YYC³ Brain Computer System — 本地闭环DevOps智能管理平台
 
 > **_YanYuCloudCube_**
 > _言启象限 | 语枢未来_
