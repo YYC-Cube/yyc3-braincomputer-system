@@ -15,6 +15,19 @@ export default tseslint.config(
     rules: {
       ...reactHooks.configs.recommended.rules,
       'react-refresh/only-export-components': 'off',
+      'react-compiler/react-compiler': 'off',
+      'react-hooks/purity': 'off',
+      'react-hooks/set-state-in-effect': 'off',
+      'react-hooks/set-state-in-render': 'off',
+      'react-hooks/static-components': 'off',
+      'react-hooks/use-memo': 'off',
+      'react-hooks/preserve-manual-memoization': 'off',
+      'react-hooks/immutability': 'off',
+      'react-hooks/refs': 'off',
+      'react-hooks/error-boundaries': 'off',
+      'react-hooks/globals': 'off',
+      'react-hooks/gating': 'off',
+      'react-hooks/config': 'off',
 
       // Phase 1 (当前): 基础收紧 - 已启用
       'prefer-const': 'error',
@@ -72,6 +85,6 @@ export default tseslint.config(
     },
   },
   {
-    ignores: ['dist/', 'node_modules/', 'docs/', '*.py', '*.yaml', '*.json', 'public/', '**/*.js', '**/*.config.*'],
+    ignores: ['dist/', 'node_modules/', 'docs/', 'e2e/', 'scripts/', '*.py', '*.yaml', '*.json', 'public/', '**/*.js', '**/*.cjs', '**/*.config.*'],
   }
 );

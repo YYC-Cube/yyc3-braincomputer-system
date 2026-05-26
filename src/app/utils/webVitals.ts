@@ -35,7 +35,7 @@ function observeLCP(callback: MetricCallback) {
     const observer = new PerformanceObserver((list) => {
       const entries = list.getEntries()
       if (entries.length > 0) {
-        const entry = entries[entries.length - 1] as PerformanceEntry
+        const entry = entries[entries.length - 1]
         callback({
           name: 'LCP',
           value: entry.startTime,
