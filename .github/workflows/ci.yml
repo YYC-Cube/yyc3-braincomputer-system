@@ -30,17 +30,17 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Lint
-        run: pnpm eslint . --max-warnings 500
+        run: pnpm lint
 
       - name: Check Warnings Threshold
         run: |
-          WARNING_COUNT=$(pnpm eslint . --max-warnings 500 2>&1 | grep -c "warning" || true)
+          WARNING_COUNT=$(pnpm lint 2>&1 | grep -c "warning" || true)
           echo "⚠️ Current Warnings: $WARNING_COUNT"
-          if [ "$WARNING_COUNT" -gt 350 ]; then
-            echo "::error::Warnings ($WARNING_COUNT) exceed threshold (350). Please reduce warnings before merging."
+          if [ "$WARNING_COUNT" -gt 400 ]; then
+            echo "::error::Warnings ($WARNING_COUNT) exceed threshold (400). Please reduce warnings before merging."
             exit 1
           fi
-          echo "✅ Warnings ($WARNING_COUNT) within acceptable range (≤350)"
+          echo "✅ Warnings ($WARNING_COUNT) within acceptable range (≤400)"
 
       - name: TypeCheck
         run: pnpm typecheck

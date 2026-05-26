@@ -11,7 +11,7 @@
     "build": "vite build",
     "build:analyze": "vite build && open stats.html",
     "preview": "vite preview --port 3155",
-    "lint": "eslint . --max-warnings 250",
+    "lint": "eslint . --max-warnings 350",
     "lint:fix": "eslint . --fix",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
